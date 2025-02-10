@@ -1,0 +1,204 @@
+html{
+    background-color: #212121;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+/* used heirarchy and parents concept in selectors concept*/
+
+header .logo img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+   
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: font-size 2s;    /* here font size increases when hovering over the anchors */
+    transition: color 0.3s; /*applied transition  here for the anchor tags */
+    
+}
+
+nav a:hover {
+    color: #f4a261; /* Light orange hover effect */
+    font-size: 20px;
+
+}
+/* main banner of my coffee website */
+.intro {
+    text-align: center;
+    color: #f9f5f5;
+    padding: 50px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.intro h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #f4a261;
+}
+
+.intro p{
+    margin-bottom: 30px;
+}
+
+.intro .menuButton  {
+    background-color: #f4a261;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.2rem;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* button of explore menu animation or transition */
+.intro .menuButton:hover { 
+    background-color: #006d08; 
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Menu */
+#menu {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#menu h2 {
+    color: #f4a261;
+    margin-bottom: 20px;
+}
+.description{
+    color: #fbfcfc;
+}
+#coffeeH, #breakfast{
+    font-size: 3rem;
+    color: #f4a261;
+    /* align-self: flex-start; */
+}
+.menu1, .menu2  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu_item{
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.menu_item:hover {
+    transform: translateY(-10px); /* at y axix of menu_item it goes down by 10px*/ 
+}
+
+.menu_item img {
+    width: 150px ;
+    height: auto;
+    border-radius: 10px;
+}
+
+.price {
+    font-weight: bold;
+    color: #f4a261;
+}
+
+/* About Us Section */
+
+.aboutImg{
+    float:right;
+    height: 30vh;
+    width: 30vh;
+    border-radius: 50%;
+}
+#about {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #070707;
+    color: #fff;
+}
+
+/* Contact us  Section */
+#contact {
+    padding: 30px 15px;
+    background-color: #f4a261;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form input,
+form textarea {          /* selecting multiple parts of html*/
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form .btnSubmit {
+    background-color: #fff;
+    color: #f4a261;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+form .btnSubmit:hover {
+    background-color: #030303;
+    color: #fcfafa;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    background-color: #2a2a2a;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    }
+
